@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
 }
+
+.main-Container-Ui {
+    background-color: black;
+    background-image: url("../Images/DarkBackgroundImage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* ---------------------------------Header--------------------------------- */
 .header-Container {
 
@@ -13,6 +21,10 @@
     backdrop-filter: blur(4px);
     padding: 0 20px;
     margin: 20px 0;
+    color: #e548ff;
+
+    position: relative;
+    z-index: 100;
 
 }
 
@@ -50,7 +62,7 @@
     font-size: 30px;
 }
 
-.icon-color{
+.icon-color {
     color: #551a8b;
 }
 
@@ -63,31 +75,110 @@
 .HeaderEndLeftArrow {
     margin: 0 0 0 30px;
 }
+
 /* ---------------------------------BODY--------------------------------- */
 .body-Section-1 {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     margin: 62px 90px 90px;
 }
-.body-Section-1-Decor{
-    flex:1;
+
+.body-Section-1-Decor {
+    position: relative;
+    z-index: 5;
+    flex: 1;
+
+    width: 50%;
+}
+
+/* -----------------VIDEO ----------------- */
+.videoContainer {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.videoContainer .video1 {
+    z-index: 4;
+    position: absolute;
+    top: -140px;
+    left: 35px;
+    transform: rotate(-18.77deg);
+    box-shadow: 4px 8px 36px #e419f6, inset 0 0 120px rgb(180 0 209 / 29%);
+
+}
+
+.videoContainer .video2 {
+    z-index: 3;
+    position: absolute;
+    top: -388px;
+    left: 208px;
+    box-shadow: 4px 8px 36px #e419f6, inset 0 0 120px rgb(180 0 209 / 29%);
+
+}
+
+.videoContainer .video3 {
+    z-index: 2;
+    position: absolute;
+    top: -89px;
+    transform: rotate(21.23deg);
+    left: 443px;
+    box-shadow: 4px 8px 36px #e419f6, inset 0 0 120px rgb(180 0 209 / 29%);
+
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.body-Section-1-Decor img {
+    position: absolute;
+    flex: 1;
+
+    top: -581px;
+    left: -90px;
+}
+
+.body-Section-1-Decor .grass {
+    z-index: 5;
+    top: 14px;
+    left: -90px;
 }
 
 .body-Section-text {
+    position: relative;
+    z-index: 5;
+
     align-self: flex-start;
-    
     flex: 1;
+
+    width: 50%;
+    color: beige;
+    background-color: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(4px);
+
+}
+
+.body-Section-text p {
+    line-height: 140%;
+    font-size: 1.5em;
 
 }
 
 .body-Section-text-title {
-    font-size: 3em;
+    font-size: 60px;
     color: #e548ff;
-    font-family: 'FeastOfFlesh', sans-serif;
+    font-family: 'Butcherman', cursive;
 
 }
+
+
 /* ---------------------------------FOOTER--------------------------------- */
 
 .footer-Container {
